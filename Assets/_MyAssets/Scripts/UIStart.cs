@@ -32,4 +32,10 @@ public class UIStart : MonoBehaviour
         System.Diagnostics.Process.Start(Application.dataPath + "/../../MysticArena/MysticArena.exe");
         Application.Quit();
     }
+
+    public void StartNovaZero()
+    {
+        System.Diagnostics.Process.Start(Application.dataPath + "/../../NovaZero/NovaZero.exe");
+        Application.Quit();
+    }
 }

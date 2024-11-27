@@ -38,4 +38,22 @@ public class UIStart : MonoBehaviour
         System.Diagnostics.Process.Start(Application.dataPath + "/../../NovaZero/NovaZero.exe");
         Application.Quit();
     }
+
+    public void StartLaChasseAuxMots()
+    {
+        System.Diagnostics.Process.Start(Application.dataPath + "/../../LaChasseAuxMots/LaChasseAuxMots.exe");
+        Application.Quit();
+    }
+
+    public void StartZombieInvasion()
+    {
+        System.Diagnostics.Process.Start(Application.dataPath + "/../../ZombieInvasion/ZombieInvasion.exe");
+        Application.Quit();
+    }
+
+    public void StartEleivatup()
+    {
+        System.Diagnostics.Process.Start(Application.dataPath + "/../../Eleivatup/Eleivatup.exe");
+        Application.Quit();
+    }
 }

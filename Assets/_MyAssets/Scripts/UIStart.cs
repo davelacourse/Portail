@@ -33,62 +33,62 @@ public class UIStart : MonoBehaviour
 
         if (PlayerPrefs.HasKey("Polygo"))
         {
-            _txtSpaceShooter.text = "(" + PlayerPrefs.GetInt("Polygo").ToString() + ")";
+            _txtPolygo.text = "(" + PlayerPrefs.GetInt("Polygo").ToString() + ")";
         }
         else
         {
             PlayerPrefs.SetInt("Polygo", 0);
-            _txtSpaceShooter.text = "(" + PlayerPrefs.GetInt("Polygo").ToString() + ")";
+            _txtPolygo.text = "(" + PlayerPrefs.GetInt("Polygo").ToString() + ")";
         }
 
         if (PlayerPrefs.HasKey("MysticArena"))
         {
-            _txtSpaceShooter.text = "(" + PlayerPrefs.GetInt("MysticArena").ToString() + ")";
+            _txtMysticArena.text = "(" + PlayerPrefs.GetInt("MysticArena").ToString() + ")";
         }
         else
         {
             PlayerPrefs.SetInt("MysticArena", 0);
-            _txtSpaceShooter.text = "(" + PlayerPrefs.GetInt("MysticArena").ToString() + ")";
+            _txtMysticArena.text = "(" + PlayerPrefs.GetInt("MysticArena").ToString() + ")";
         }
 
         if (PlayerPrefs.HasKey("NovaZero"))
         {
-            _txtSpaceShooter.text = "(" + PlayerPrefs.GetInt("NovaZero").ToString() + ")";
+            _txtNovaZero.text = "(" + PlayerPrefs.GetInt("NovaZero").ToString() + ")";
         }
         else
         {
             PlayerPrefs.SetInt("NovaZero", 0);
-            _txtSpaceShooter.text = "(" + PlayerPrefs.GetInt("NovaZero").ToString() + ")";
+            _txtNovaZero.text = "(" + PlayerPrefs.GetInt("NovaZero").ToString() + ")";
         }
 
         if (PlayerPrefs.HasKey("LaChasseAuxMots"))
         {
-            _txtSpaceShooter.text = "(" + PlayerPrefs.GetInt("LaChasseAuxMots").ToString() + ")";
+            _txtLaChasseAuxMots.text = "(" + PlayerPrefs.GetInt("LaChasseAuxMots").ToString() + ")";
         }
         else
         {
             PlayerPrefs.SetInt("LaChasseAuxMots", 0);
-            _txtSpaceShooter.text = "(" + PlayerPrefs.GetInt("LaChasseAuxMots").ToString() + ")";
+            _txtLaChasseAuxMots.text = "(" + PlayerPrefs.GetInt("LaChasseAuxMots").ToString() + ")";
         }
 
         if (PlayerPrefs.HasKey("ZombieInvasion"))
         {
-            _txtSpaceShooter.text = "(" + PlayerPrefs.GetInt("ZombieInvasion").ToString() + ")";
+            _txtZombieInvasion.text = "(" + PlayerPrefs.GetInt("ZombieInvasion").ToString() + ")";
         }
         else
         {
             PlayerPrefs.SetInt("ZombieInvasion", 0);
-            _txtSpaceShooter.text = "(" + PlayerPrefs.GetInt("ZombieInvasion").ToString() + ")";
+            _txtZombieInvasion.text = "(" + PlayerPrefs.GetInt("ZombieInvasion").ToString() + ")";
         }
 
         if (PlayerPrefs.HasKey("Eleivatup"))
         {
-            _txtSpaceShooter.text = "(" + PlayerPrefs.GetInt("Eleivatup").ToString() + ")";
+            _txtEleivatup.text = "(" + PlayerPrefs.GetInt("Eleivatup").ToString() + ")";
         }
         else
         {
             PlayerPrefs.SetInt("Eleivatup", 0);
-            _txtSpaceShooter.text = "(" + PlayerPrefs.GetInt("Eleivatup").ToString() + ")";
+            _txtEleivatup.text = "(" + PlayerPrefs.GetInt("Eleivatup").ToString() + ")";
         }
 
 

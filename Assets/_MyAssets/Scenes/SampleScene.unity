@@ -6040,6 +6040,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _boutonSelectedDepart: {fileID: 1764894064}
+  _txtSpaceShooter: {fileID: 245873945}
+  _txtPolygo: {fileID: 1807606785}
+  _txtMysticArena: {fileID: 1250869597}
+  _txtNovaZero: {fileID: 530568454}
+  _txtLaChasseAuxMots: {fileID: 204707359}
+  _txtZombieInvasion: {fileID: 814419280}
+  _txtEleivatup: {fileID: 1373488518}
 --- !u!1 &2144245653
 GameObject:
   m_ObjectHideFlags: 0

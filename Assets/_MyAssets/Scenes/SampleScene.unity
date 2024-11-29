@@ -273,7 +273,7 @@ GameObject:
   - component: {fileID: 47464194}
   - component: {fileID: 47464193}
   m_Layer: 5
-  m_Name: BtSpaceShooter (1)
+  m_Name: BtZombieInvasion
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -466,7 +466,7 @@ GameObject:
   - component: {fileID: 66584799}
   - component: {fileID: 66584798}
   m_Layer: 5
-  m_Name: TxtSpaceShooter (1)
+  m_Name: TxtChasseAuxMots
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -603,7 +603,7 @@ GameObject:
   - component: {fileID: 135226236}
   - component: {fileID: 135226235}
   m_Layer: 5
-  m_Name: Imgfond (1)
+  m_Name: ImgfondNovaZero
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -679,7 +679,7 @@ GameObject:
   - component: {fileID: 146051193}
   - component: {fileID: 146051192}
   m_Layer: 5
-  m_Name: ImgSpaceshooter (1)
+  m_Name: ImgChasseAuxMots
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -755,7 +755,7 @@ GameObject:
   - component: {fileID: 164164187}
   - component: {fileID: 164164186}
   m_Layer: 5
-  m_Name: TxtPolygo (1)
+  m_Name: TxtPolygo
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -892,7 +892,7 @@ GameObject:
   - component: {fileID: 204707360}
   - component: {fileID: 204707359}
   m_Layer: 5
-  m_Name: txtcompteur (4)
+  m_Name: TxtCompteurChasseAuxMots
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1027,7 +1027,7 @@ GameObject:
   - component: {fileID: 218156132}
   - component: {fileID: 218156131}
   m_Layer: 5
-  m_Name: ImgSpaceshooter (1)
+  m_Name: ImgZombieInvasion
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1238,7 +1238,7 @@ GameObject:
   - component: {fileID: 245873946}
   - component: {fileID: 245873945}
   m_Layer: 5
-  m_Name: txtcompteur
+  m_Name: TxtCompteurSpaceShooter
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2065,7 +2065,7 @@ GameObject:
   - component: {fileID: 530568455}
   - component: {fileID: 530568454}
   m_Layer: 5
-  m_Name: txtcompteur (3)
+  m_Name: TxtCompteurNovaZero
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2337,7 +2337,7 @@ GameObject:
   - component: {fileID: 602733429}
   - component: {fileID: 602733428}
   m_Layer: 5
-  m_Name: BtSpaceShooter (1)
+  m_Name: BtChasseAuxMots
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2530,7 +2530,7 @@ GameObject:
   - component: {fileID: 657872152}
   - component: {fileID: 657872151}
   m_Layer: 5
-  m_Name: TxtSpaceShooter (1)
+  m_Name: TxtSpaceShooter
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2667,7 +2667,7 @@ GameObject:
   - component: {fileID: 814419281}
   - component: {fileID: 814419280}
   m_Layer: 5
-  m_Name: txtcompteur (5)
+  m_Name: TxtCompteurZombieInvasion
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2802,7 +2802,7 @@ GameObject:
   - component: {fileID: 836430279}
   - component: {fileID: 836430278}
   m_Layer: 5
-  m_Name: Imgfond (1)
+  m_Name: ImgfondPolygo
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3519,7 +3519,7 @@ GameObject:
   - component: {fileID: 1120153913}
   - component: {fileID: 1120153912}
   m_Layer: 5
-  m_Name: TxtSpaceShooter (1)
+  m_Name: TxtEleivatup
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3732,7 +3732,7 @@ GameObject:
   - component: {fileID: 1250869598}
   - component: {fileID: 1250869597}
   m_Layer: 5
-  m_Name: txtcompteur (2)
+  m_Name: TxtCompteurMysticArena
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3907,7 +3907,7 @@ GameObject:
   - component: {fileID: 1367929583}
   - component: {fileID: 1367929582}
   m_Layer: 5
-  m_Name: TxtMysticArena
+  m_Name: TxtNovaZero
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4044,7 +4044,7 @@ GameObject:
   - component: {fileID: 1373488519}
   - component: {fileID: 1373488518}
   m_Layer: 5
-  m_Name: txtcompteur (6)
+  m_Name: TxtCompteurEleivatup
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4179,7 +4179,7 @@ GameObject:
   - component: {fileID: 1415091252}
   - component: {fileID: 1415091251}
   m_Layer: 5
-  m_Name: ImgSpaceshooter (1)
+  m_Name: ImgEleivatup
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4331,7 +4331,7 @@ GameObject:
   - component: {fileID: 1440895000}
   - component: {fileID: 1440894999}
   m_Layer: 5
-  m_Name: Text (TMP)
+  m_Name: Txt2Players
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4466,7 +4466,7 @@ GameObject:
   - component: {fileID: 1470122909}
   - component: {fileID: 1470122908}
   m_Layer: 5
-  m_Name: TxtSpaceShooter (1)
+  m_Name: TxtZombieInvasion
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4603,7 +4603,7 @@ GameObject:
   - component: {fileID: 1480807680}
   - component: {fileID: 1480807679}
   m_Layer: 5
-  m_Name: Imgfond (1)
+  m_Name: ImgfondMysticArena
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4682,7 +4682,7 @@ GameObject:
   - component: {fileID: 1483605519}
   - component: {fileID: 1483605518}
   m_Layer: 5
-  m_Name: BtPolygo (1)
+  m_Name: BtPolygo
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5111,7 +5111,7 @@ GameObject:
   - component: {fileID: 1657497059}
   - component: {fileID: 1657497058}
   m_Layer: 5
-  m_Name: ImgSpaceshooter (1)
+  m_Name: ImgSpaceshooter
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5190,7 +5190,7 @@ GameObject:
   - component: {fileID: 1764894063}
   - component: {fileID: 1764894062}
   m_Layer: 5
-  m_Name: BtSpaceShooter (1)
+  m_Name: BtSpaceShooter
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5383,7 +5383,7 @@ GameObject:
   - component: {fileID: 1807606786}
   - component: {fileID: 1807606785}
   m_Layer: 5
-  m_Name: txtcompteur (1)
+  m_Name: TxtCompteurPolygo
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5521,7 +5521,7 @@ GameObject:
   - component: {fileID: 1864133943}
   - component: {fileID: 1864133942}
   m_Layer: 5
-  m_Name: BtSpaceShooter (1)
+  m_Name: BtEleivatup
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

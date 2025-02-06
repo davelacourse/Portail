@@ -15,6 +15,7 @@ public class UIStart : MonoBehaviour
     [SerializeField] TMP_Text _txtLaChasseAuxMots = default(TMP_Text);
     [SerializeField] TMP_Text _txtZombieInvasion = default(TMP_Text);
     [SerializeField] TMP_Text _txtEleivatup = default(TMP_Text);
+    [SerializeField] TMP_Text _txtSlime = default(TMP_Text);
 
     private void Start()
     {
@@ -91,6 +92,16 @@ public class UIStart : MonoBehaviour
             _txtEleivatup.text = "(" + PlayerPrefs.GetInt("Eleivatup").ToString() + ")";
         }
 
+        if (PlayerPrefs.HasKey("Slime"))
+        {
+            _txtSlime.text = "(" + PlayerPrefs.GetInt("Slime").ToString() + ")";
+        }
+        else
+        {
+            PlayerPrefs.SetInt("Slime", 0);
+            _txtSlime.text = "(" + PlayerPrefs.GetInt("Slime").ToString() + ")";
+        }
+
 
     }
 
@@ -140,6 +151,13 @@ public class UIStart : MonoBehaviour
     {
         PlayerPrefs.SetInt("Eleivatup", (PlayerPrefs.GetInt("Eleivatup") + 1));
         System.Diagnostics.Process.Start(Application.dataPath + "/../../Eleivatup/Eleivatup.exe");
+        Application.Quit();
+    }
+
+    public void StartSlime()
+    {
+        PlayerPrefs.SetInt("Slime", (PlayerPrefs.GetInt("Slime") + 1));
+        System.Diagnostics.Process.Start(Application.dataPath + "/../../SlimeContreTous/SlimeContreTous.exe");
         Application.Quit();
     }
 }

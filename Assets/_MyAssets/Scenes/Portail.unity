@@ -5967,7 +5967,7 @@ GameObject:
   - component: {fileID: 819914841}
   - component: {fileID: 819914840}
   m_Layer: 5
-  m_Name: TxtCompteurSpaceShooter
+  m_Name: TxtCompteurSpaceShooter2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -10235,7 +10235,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 2120957523}
         m_TargetAssemblyTypeName: UIStart, Assembly-CSharp
-        m_MethodName: StartMysticArena
+        m_MethodName: StartFarmageddon
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -13222,7 +13222,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 2120957523}
         m_TargetAssemblyTypeName: UIStart, Assembly-CSharp
-        m_MethodName: StartPolygo
+        m_MethodName: StartHatsune
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -13498,7 +13498,7 @@ Canvas:
   m_OverridePixelPerfect: 0
   m_SortingBucketNormalizedSize: 0
   m_VertexColorAlwaysGammaSpace: 0
-  m_AdditionalShaderChannelsFlag: 25
+  m_AdditionalShaderChannelsFlag: 1
   m_UpdateRectTransformForStandalone: 0
   m_SortingLayerID: 0
   m_SortingOrder: 0
@@ -13552,6 +13552,9 @@ MonoBehaviour:
   _txtZombieInvasion: {fileID: 814419280}
   _txtEleivatup: {fileID: 1373488518}
   _txtSlime: {fileID: 1125107128}
+  _txtHatsune: {fileID: 769223232}
+  _txtFarmageddon: {fileID: 1323055358}
+  _txtSpaceShooter2: {fileID: 819914840}
   _panneau2024: {fileID: 1872130315}
   _panneau2025: {fileID: 1636461986}
   _bouton2025: {fileID: 47206171}

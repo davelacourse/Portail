@@ -17,6 +17,9 @@ public class UIStart : MonoBehaviour
     [SerializeField] private TMP_Text _txtZombieInvasion = default(TMP_Text);
     [SerializeField] private TMP_Text _txtEleivatup = default(TMP_Text);
     [SerializeField] private TMP_Text _txtSlime = default(TMP_Text);
+    [SerializeField] private TMP_Text _txtHatsune = default(TMP_Text);
+    [SerializeField] private TMP_Text _txtFarmageddon = default(TMP_Text);
+    [SerializeField] private TMP_Text _txtSpaceShooter2 = default(TMP_Text);
     [SerializeField] private GameObject _panneau2024 = default(GameObject);
     [SerializeField] private GameObject _panneau2025 = default(GameObject);
     [SerializeField] private Button _bouton2025 = default(Button);
@@ -39,11 +42,13 @@ public class UIStart : MonoBehaviour
         if (PlayerPrefs.HasKey("SpaceShooter"))
         {
             _txtSpaceShooter.text = "(" + PlayerPrefs.GetInt("SpaceShooter").ToString() + ")";
+            _txtSpaceShooter2.text = "(" + PlayerPrefs.GetInt("SpaceShooter").ToString() + ")";
         }
         else
         {
             PlayerPrefs.SetInt("SpaceShooter", 0);
             _txtSpaceShooter.text = "(" + PlayerPrefs.GetInt("SpaceShooter").ToString() + ")";
+            _txtSpaceShooter2.text = "(" + PlayerPrefs.GetInt("SpaceShooter").ToString() + ")";
         }
 
         if (PlayerPrefs.HasKey("Polygo"))
@@ -120,22 +125,22 @@ public class UIStart : MonoBehaviour
 
         if (PlayerPrefs.HasKey("Hatsune"))
         {
-            _txtSlime.text = "(" + PlayerPrefs.GetInt("Hatsune").ToString() + ")";
+            _txtHatsune.text = "(" + PlayerPrefs.GetInt("Hatsune").ToString() + ")";
         }
         else
         {
             PlayerPrefs.SetInt("Hatsune", 0);
-            _txtSlime.text = "(" + PlayerPrefs.GetInt("Hatsune").ToString() + ")";
+            _txtHatsune.text = "(" + PlayerPrefs.GetInt("Hatsune").ToString() + ")";
         }
 
         if (PlayerPrefs.HasKey("Farmageddon"))
         {
-            _txtSlime.text = "(" + PlayerPrefs.GetInt("Farmageddon").ToString() + ")";
+            _txtFarmageddon.text = "(" + PlayerPrefs.GetInt("Farmageddon").ToString() + ")";
         }
         else
         {
             PlayerPrefs.SetInt("Farmageddon", 0);
-            _txtSlime.text = "(" + PlayerPrefs.GetInt("Farmageddon").ToString() + ")";
+            _txtFarmageddon.text = "(" + PlayerPrefs.GetInt("Farmageddon").ToString() + ")";
         }
 
 
@@ -202,7 +207,7 @@ public class UIStart : MonoBehaviour
     public void StartHatsune()
     {
         PlayerPrefs.SetInt("Hatsune", (PlayerPrefs.GetInt("Hatsune") + 1));
-        System.Diagnostics.Process.Start(Application.dataPath + "/../../Hatsune/Hatsune Miku's World Tour.exe");
+        System.Diagnostics.Process.Start(Application.dataPath + "/../../Hatsune/Hatsune.exe");
         Application.Quit();
     }
 

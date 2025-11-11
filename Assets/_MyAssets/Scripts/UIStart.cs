@@ -20,6 +20,8 @@ public class UIStart : MonoBehaviour
     [SerializeField] private TMP_Text _txtHatsune = default(TMP_Text);
     [SerializeField] private TMP_Text _txtFarmageddon = default(TMP_Text);
     [SerializeField] private TMP_Text _txtSpaceShooter2 = default(TMP_Text);
+    [SerializeField] private TMP_Text _txtMowerMadness = default(TMP_Text);
+    [SerializeField] private TMP_Text _txtUrbanDrift = default(TMP_Text);
     [SerializeField] private GameObject _panneau2024 = default(GameObject);
     [SerializeField] private GameObject _panneau2025 = default(GameObject);
     [SerializeField] private Button _bouton2025 = default(Button);
@@ -143,6 +145,26 @@ public class UIStart : MonoBehaviour
             _txtFarmageddon.text = "(" + PlayerPrefs.GetInt("Farmageddon").ToString() + ")";
         }
 
+        if (PlayerPrefs.HasKey("Mower"))
+        {
+            _txtMowerMadness.text = "(" + PlayerPrefs.GetInt("Mower").ToString() + ")";
+        }
+        else
+        {
+            PlayerPrefs.SetInt("Mower", 0);
+            _txtMowerMadness.text = "(" + PlayerPrefs.GetInt("Mower").ToString() + ")";
+        }
+
+        if (PlayerPrefs.HasKey("Urban"))
+        {
+            _txtUrbanDrift.text = "(" + PlayerPrefs.GetInt("Urban").ToString() + ")";
+        }
+        else
+        {
+            PlayerPrefs.SetInt("Urban", 0);
+            _txtUrbanDrift.text = "(" + PlayerPrefs.GetInt("Urban").ToString() + ")";
+        }
+
 
     }
 
@@ -215,6 +237,20 @@ public class UIStart : MonoBehaviour
     {
         PlayerPrefs.SetInt("Farmageddon", (PlayerPrefs.GetInt("Farmageddon") + 1));
         System.Diagnostics.Process.Start(Application.dataPath + "/../../Farmageddon/Farmageddon.exe");
+        Application.Quit();
+    }
+
+    public void StartMowerMadness()
+    {
+        PlayerPrefs.SetInt("Mower", (PlayerPrefs.GetInt("Mower") + 1));
+        System.Diagnostics.Process.Start(Application.dataPath + "/../../MowerMadness/MowerMadness.exe");
+        Application.Quit();
+    }
+
+    public void StartUrbanDrift()
+    {
+        PlayerPrefs.SetInt("Urban", (PlayerPrefs.GetInt("Urban") + 1));
+        System.Diagnostics.Process.Start(Application.dataPath + "/../../UrbanDrift/UrbanDrift.exe");
         Application.Quit();
     }
 

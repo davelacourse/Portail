@@ -7,20 +7,34 @@ using UnityEngine.UI;
 
 public class UIStart : MonoBehaviour
 {
-    [SerializeField] Button _boutonSelectedDepart = default(Button);
-    [SerializeField] TMP_Text _txtSpaceShooter = default(TMP_Text);
-    [SerializeField] TMP_Text _txtPolygo = default(TMP_Text);
-    [SerializeField] TMP_Text _txtMysticArena = default(TMP_Text);
-    [SerializeField] TMP_Text _txtNovaZero = default(TMP_Text);
-    [SerializeField] TMP_Text _txtLaChasseAuxMots = default(TMP_Text);
-    [SerializeField] TMP_Text _txtZombieInvasion = default(TMP_Text);
-    [SerializeField] TMP_Text _txtEleivatup = default(TMP_Text);
-    [SerializeField] TMP_Text _txtSlime = default(TMP_Text);
+    [SerializeField] private Button _boutonSelectedDepart2024 = default(Button);
+    [SerializeField] private Button _boutonSelectedDepart2025 = default(Button);
+    [SerializeField] private TMP_Text _txtSpaceShooter = default(TMP_Text);
+    [SerializeField] private TMP_Text _txtPolygo = default(TMP_Text);
+    [SerializeField] private TMP_Text _txtMysticArena = default(TMP_Text);
+    [SerializeField] private TMP_Text _txtNovaZero = default(TMP_Text);
+    [SerializeField] private TMP_Text _txtLaChasseAuxMots = default(TMP_Text);
+    [SerializeField] private TMP_Text _txtZombieInvasion = default(TMP_Text);
+    [SerializeField] private TMP_Text _txtEleivatup = default(TMP_Text);
+    [SerializeField] private TMP_Text _txtSlime = default(TMP_Text);
+    [SerializeField] private GameObject _panneau2024 = default(GameObject);
+    [SerializeField] private GameObject _panneau2025 = default(GameObject);
+    [SerializeField] private Button _bouton2025 = default(Button);
+    [SerializeField] private Button _bouton2024 = default(Button);
+
 
     private void Start()
     {
         EventSystem.current.SetSelectedGameObject(null);
-        EventSystem.current.SetSelectedGameObject(_boutonSelectedDepart.gameObject);
+        if (_panneau2024.activeSelf)
+        {
+            EventSystem.current.SetSelectedGameObject(_boutonSelectedDepart2024.gameObject);
+        }
+        else
+        {
+            EventSystem.current.SetSelectedGameObject(_boutonSelectedDepart2025.gameObject);
+        }
+            
 
         if (PlayerPrefs.HasKey("SpaceShooter"))
         {
@@ -102,6 +116,28 @@ public class UIStart : MonoBehaviour
             _txtSlime.text = "(" + PlayerPrefs.GetInt("Slime").ToString() + ")";
         }
 
+        // ========== 2025 =============
+
+        if (PlayerPrefs.HasKey("Hatsune"))
+        {
+            _txtSlime.text = "(" + PlayerPrefs.GetInt("Hatsune").ToString() + ")";
+        }
+        else
+        {
+            PlayerPrefs.SetInt("Hatsune", 0);
+            _txtSlime.text = "(" + PlayerPrefs.GetInt("Hatsune").ToString() + ")";
+        }
+
+        if (PlayerPrefs.HasKey("Farmageddon"))
+        {
+            _txtSlime.text = "(" + PlayerPrefs.GetInt("Farmageddon").ToString() + ")";
+        }
+        else
+        {
+            PlayerPrefs.SetInt("Farmageddon", 0);
+            _txtSlime.text = "(" + PlayerPrefs.GetInt("Farmageddon").ToString() + ")";
+        }
+
 
     }
 
@@ -159,5 +195,41 @@ public class UIStart : MonoBehaviour
         PlayerPrefs.SetInt("Slime", (PlayerPrefs.GetInt("Slime") + 1));
         System.Diagnostics.Process.Start(Application.dataPath + "/../../SlimeContreTous/SlimeContreTous.exe");
         Application.Quit();
+    }
+
+    // ====== 20205 ==================
+    
+    public void StartHatsune()
+    {
+        PlayerPrefs.SetInt("Hatsune", (PlayerPrefs.GetInt("Hatsune") + 1));
+        System.Diagnostics.Process.Start(Application.dataPath + "/../../Hatsune/Hatsune Miku's World Tour.exe");
+        Application.Quit();
+    }
+
+    public void StartFarmageddon()
+    {
+        PlayerPrefs.SetInt("Farmageddon", (PlayerPrefs.GetInt("Farmageddon") + 1));
+        System.Diagnostics.Process.Start(Application.dataPath + "/../../Farmageddon/Farmageddon.exe");
+        Application.Quit();
+    }
+
+    public void ChangerAnnee2024()
+    {
+        _panneau2024.SetActive(true);
+        _panneau2025.SetActive(false); 
+        //EventSystem.current.SetSelectedGameObject(null);
+        //EventSystem.current.SetSelectedGameObject(_boutonSelectedDepart2024.gameObject);
+        _bouton2024.image.color = new Color32(115, 115, 115, 255);
+        _bouton2025.image.color = new Color32(255, 255, 255, 255);
+    }
+
+    public void ChangerAnnee2025()
+    {
+        _panneau2024.SetActive(false);
+        _panneau2025.SetActive(true);
+        //EventSystem.current.SetSelectedGameObject(null);
+        //EventSystem.current.SetSelectedGameObject(_boutonSelectedDepart2025.gameObject);
+        _bouton2025.image.color = new Color32(115, 115, 115, 255);
+        _bouton2024.image.color = new Color32(255, 255, 255, 255);
     }
 }
